@@ -9,6 +9,13 @@ h4 {
     font-size: 2em;
     font-weight: bold;
 }
+h3 {
+    color: #3d3d3d;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: bold;
+    margin: 2em 15px .5em 15px;
+    border-bottom: 2px solid #3d3d3d;
+}
 .header {
     background: rgba(55,25,10,1);
     border-bottom: 3px solid #3d3d3d;
@@ -48,6 +55,12 @@ h4 {
     border-bottom: 3px solid #3d3d3d;
     border-top: 3px solid #3d3d3d;
     overflow: hidden;
+    margin: 10px 0;
+}
+
+.jumbotron.content {
+    border: 0;
+    min-height: 400px;
 }
 
 .content-container, .content-item, .bottom-info {
