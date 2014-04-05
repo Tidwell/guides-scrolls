@@ -8,18 +8,24 @@
         <title>Scrolls Guides</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <link rel="shortcut icon" href="/favicon.ico">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link href='http://fonts.googleapis.com/css?family=Playfair+Display+SC:400,900' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700' rel='stylesheet' type='text/css'>
+
         <!-- build:css styles/vendor.css -->
         <!-- bower:css -->
         <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.min.css">
-        <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700' rel='stylesheet' type='text/css'>
         <!-- endbower -->
         <!-- endbuild -->
         <!-- build:css(.tmp) styles/main.css -->
         <link rel="stylesheet" href="styles/main.css">
         <link rel="stylesheet" href="styles/desktop.css">
+        <link rel="stylesheet" href="styles/tablet.css">
         <!-- endbuild -->
         <!-- build:js scripts/vendor/modernizr.js -->
         <script src="bower_components/modernizr/modernizr.js"></script>
@@ -33,17 +39,52 @@
 
 
         <div class="container-fluid">
-            <div class="header">
-                <ul class="nav nav-pills pull-right">
-                    <li class="active"><a href="#">Guides</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-                <h3 class="text-muted">Scrolls Guides</h3>
+            <!-- Fixed navbar -->
+            <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+              <div class="container">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#">Scrolls Guides</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                  <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Featured</a></li>
+                    <li><a href="#">Basics</a></li>
+                    <li><a href="#">Intermediate</a></li>
+                    <li><a href="#">Master</a></li>
+                  </ul>
+                  <ul class="nav navbar-nav navbar-right">
+                     <li><a href="#">About</a></li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Categories <b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Video</a></li>
+                        <li class="divider"></li>
+                        <li class="dropdown-header">Complexity</li>
+                        <li><a href="#">Basic</a></li>
+                        <li><a href="#">Intermediate</a></li>
+                        <li><a href="#">Master</a></li>
+                        <li class="divider"></li>
+                        <li class="dropdown-header">Topic</li>
+                        <li><a href="#">Decks</a></li>
+                        <li><a href="#">Strategy</a></li>
+                        <li><a href="#">Ranked</a></li>
+                        <li><a href="#">Judgment</a></li>
+                        <li><a href="#">UI &amp; Mods</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div><!--/.nav-collapse -->
+              </div>
             </div>
 
             <!-- Type 1, full width -->
-            <a href="#">
+            <a href="#" class="content-block">
                 <div class="jumbotron" style="background-image: url(images/growth.jpg)">
                     <div class="type-tag tier3"><i class="fa fa-trophy"></i> Master</div>
                     <div class="content-container">
@@ -54,7 +95,7 @@
             </a>
 
             <!-- type 2, three articles -->
-            <div class="row">
+            <div class="row content-block">
                 <div class="col-md-4 col-sm-6">
                     <a href="#">
                         <div class="content-item" style="background-image: url(images/screenshot.jpg)">
@@ -110,7 +151,7 @@
             </div>
 
             <!--type 3, video + article -->
-            <div class="row">
+            <div class="row content-block">
                 <div class="col-md-6 col-sm-12">
                     <a href="#" class="video-container">
                         <div class="content-item" style="background-image: url(images/growth.jpg)">
@@ -147,7 +188,7 @@
 
             <!-- Type 4, header with full width content section break -->
             <!--TODO FIX TEXT ALIGNMENT-->
-            <div class="row">
+            <div class="row content-block">
                 <h3>Hot Guides!</h3>
                 <div class="col-md-12">
                     <a href="#">
@@ -163,7 +204,7 @@
             </div>
 
             <!--repeat of type 3, just flipped, article + video-->
-            <div class="row">
+            <div class="row content-block">
                 <div class="col-md-6 col-sm-12">
                     <a href="#">
                         <div class="content-item"style="background-image: url(images/screenshot2.jpg)">
