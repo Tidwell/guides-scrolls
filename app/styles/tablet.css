@@ -18,7 +18,7 @@
 		margin-top: 30px;
 	}
 
-	.content-well h5 + img + blockquote { /* bring the blockquote down from the header */
+	.content-well h5 + img + * { /* bring the element down from the header */
 		margin-top: 30px;
 	}
 
