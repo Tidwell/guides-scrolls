@@ -13,7 +13,7 @@ h3 {
     color: #3d3d3d;
     font-family: 'Libre Baskerville', serif;
     font-weight: bold;
-    margin: 2em 15px .5em 15px;
+    margin: 2em 15px 0 15px;
     border-bottom: 2px solid #3d3d3d;
 }
 .header {
@@ -58,9 +58,11 @@ h3 {
     margin: 10px 0;
 }
 
-.jumbotron.content {
+.content {
     border: 0;
     min-height: 400px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .content-container, .content-item, .bottom-info {
@@ -201,7 +203,7 @@ a:hover .jumbotron .type-tag {
     display: none;
     margin: 0 auto;
     width: 100%;
-    min-height: 315px;
+    height: 315px;
 }
 .col-sm-12.col-md-6 .content-item {
     min-height: 290px;
