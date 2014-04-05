@@ -257,3 +257,54 @@ a.video-container:hover .play-container {
 .footer {
     margin-top: 30px;
 }
+
+
+.guide-header {
+    background-size: cover;
+    border-top: 3px solid #3d3d3d;
+    border-bottom: 3px solid #3d3d3d;
+    min-height: 150px;
+    position: relative;
+    max-width: 950px;
+    margin: 0 auto 10px auto;
+    border-radius: 0 0 5px 5px;
+}
+.guide-header h2 {
+    font-family: 'Libre Baskerville', serif;
+    line-height: 150px;
+    text-shadow: 0 0 10px #000;
+    font-size: 40px;
+    color: #fdfdfd;
+}
+.byline {
+    float: right;
+    color: #000;
+    font-size: 20px;
+    line-height: 40px;
+}
+.byline .divider {
+    color: #000 !important;
+}
+.byline img {
+    max-height: 40px;
+    box-shadow: 0 0 3px #000;
+}
+
+.content-well {
+    max-width: 950px;
+    margin: 10px auto;
+    font-size: 20px;
+}
+
+.content-well>p:first-child:first-letter {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 45px;
+}
+
+.content-well h5 {
+    font-size: 30px;
+    font-family: 'Libre Baskerville', serif;
+    width: 100%;
+    border-bottom: 3px solid #3d3d3d;
+    margin: 20px 0 30px;
+}
