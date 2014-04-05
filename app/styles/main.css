@@ -164,13 +164,13 @@ a:hover .jumbotron .content-container,
     z-index: 5;
 }
 .type-tag.tier1 {
-    background: #A67D00;
+    background: #30c333;
 }
 .type-tag.tier2 {
-    background: #502982;
+    background: #0B5FA5;
 }
 .type-tag.tier3 {
-    background: #0B5FA5;
+    background: #502982;
 }
 .content-item:hover .type-tag {
     box-shadow: -3px 3px 5px #000; /* add more dropdshadow when hovering over the content box */
