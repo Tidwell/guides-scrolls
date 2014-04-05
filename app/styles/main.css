@@ -26,6 +26,9 @@ h3 {
 a:hover {
     text-decoration: none;
 }
+.content-well a:hover {
+    text-decoration: underline;
+}
 
 /* pad most of the content, so we can do full width stuff */
 .container-fluid .row,
@@ -306,6 +309,7 @@ a.video-container:hover .play-container {
 
 .content-well h5 {
     font-size: 30px;
+    line-height: 1.4em;
     font-family: 'Libre Baskerville', serif;
     width: 100%;
     border-bottom: 1px solid #3d3d3d;
@@ -320,21 +324,31 @@ a.video-container:hover .play-container {
     padding: 0 20px;
 }
 
-.content-well.primary-content img {
+.content-well.primary-content img { 
     width: 100%;
     margin-bottom: 30px;
 }
 
-.content-well h5 + blockquote {
+.content-well h5 + blockquote { /*header followed by a blockquote*/
     margin-top: 30px;
 }
-.content-well h5 + p {
+.content-well h5 + p { /*header followed by a paragraph*/
     margin-top: 30px;
 }
+
+.content-well p > img { /*image inside a paragraph*/
+    margin-top: 30px;
+}
+.content-well.primary-content > a {
+    margin-bottom: 30px;
+    display: block;
+}
+
 
 .sharing {
     margin: 0 0 30px 0px;
 }
+
 
 .row.more-block {
     padding: 0;
@@ -345,4 +359,58 @@ a.video-container:hover .play-container {
 }
 .more-block > div {
     margin-top: 0;
+}
+
+
+i.faction-decay, i.faction-energy, i.faction-growth, i.faction-order {
+    display: inline-block;
+    background-size: cover;
+}
+i.faction-decay {
+    background-image: url(/images/card-icons/decay.png);
+    height: 49px;
+    width: 64px;
+}
+i.faction-energy {
+    background-image: url(/images/card-icons/energy.png);
+    width: 54px;
+    height: 54px;
+}
+i.faction-growth {
+    background-image: url(/images/card-icons/growth.png);
+    height: 60px;
+    width: 54px;
+}
+i.faction-order {
+    background-image: url(/images/card-icons/order.png);
+    height: 64px;
+    width: 64px;
+}
+
+h5 > i {
+    max-height: 28px;
+}
+h5 > i.faction-decay {
+    max-width: 36px;
+}
+h5 > i.faction-energy,
+h5 > i.faction-order {
+    max-width: 28px;
+}
+h5 > i.faction-growth {
+    max-width: 25px;
+}
+
+p > i {
+    max-height: 14px;
+}
+p > i.faction-decay {
+    max-width: 18px;
+}
+p > i.faction-energy,
+p > i.faction-order {
+    max-width: 14px;
+}
+p > i.faction-growth {
+    max-width: 13px;
 }

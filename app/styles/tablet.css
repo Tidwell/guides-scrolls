@@ -1,4 +1,7 @@
 @media (min-width: 768px) {
+	.content-well h5 {
+		clear: both;
+	}
 	.content-well.primary-content  img {
 		float: left;
 		max-width: 45%;
@@ -11,6 +14,10 @@
 		margin: 0 0 30px 30px;
 	}
 
+	.content-well.primary-content p > img {
+		margin-top: 30px;
+	}
+
 	.content-well h5 + img + blockquote { /* bring the blockquote down from the header */
 		margin-top: 30px;
 	}
@@ -18,6 +25,11 @@
 	.content-well.primary-content h5 + img {
 		border-top: 0;
 	}
+
+	.content-well.primary-content img.full {
+		max-width: 100%;
+	}
+
 
 	.sharing {
 	}
