@@ -1,5 +1,5 @@
 body {
-    background: #fdfdfd;
+    background: #f6f6f6;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     padding-top: 40px;
@@ -15,7 +15,7 @@ h3 {
     color: #3d3d3d;
     font-family: 'Libre Baskerville', serif;
     font-weight: bold;
-    margin: 2em 15px 0 15px;
+    margin: 10px 15px 0 15px;
     border-bottom: 2px solid #3d3d3d;
 }
 
@@ -36,7 +36,7 @@ a:hover {
 
 .navbar {
     border-bottom: 3px solid #3d3d3d;
-    background-image: url('/images/header-bg.png');
+    background-image: url('../images/header-bg.png');
     background-size: cover;
     box-shadow: 0 2px 5px #000;
 }
@@ -66,6 +66,10 @@ a:hover {
     display: block;
 }
 
+.content-block > div {
+    margin-bottom: 30px; /* give all content equal bottom spacing*/
+}
+
 .jumbotron {
     position: relative;
     min-height: 300px;
@@ -74,7 +78,7 @@ a:hover {
     border-bottom: 3px solid #3d3d3d;
     border-top: 3px solid #3d3d3d;
     overflow: hidden;
-    margin: 10px 0;
+    margin: 10px 0 20px 0;
 }
 
 .content {
@@ -97,7 +101,7 @@ a:hover {
     border-bottom: 0;
     height: 200px;
     background-size: cover;
-    margin: 10px 0 0 0;
+    margin: 0 0 0 0;
     overflow: hidden;
     box-shadow: 0px 0px 2px #000;
 }
@@ -127,9 +131,6 @@ a:hover .bottom-info {
     text-decoration: none;
 }
 
-a:hover .type-tag {
-    font-weight: bold;
-}
 /*jumbotron-specific content-container*/
 a:hover .jumbotron .content-container,
 .jumbotron .content-container {
@@ -265,9 +266,6 @@ a.video-container:hover .play-container {
     border-bottom: 3px solid #3d3d3d;
     min-height: 150px;
     position: relative;
-    max-width: 950px;
-    margin: 0 auto 10px auto;
-    border-radius: 0 0 5px 5px;
 }
 .guide-header h2 {
     font-family: 'Libre Baskerville', serif;
@@ -294,6 +292,7 @@ a.video-container:hover .play-container {
     max-width: 950px;
     margin: 10px auto;
     font-size: 20px;
+    line-height: 1.5em;
 }
 
 .content-well>p:first-child:first-letter {
@@ -301,10 +300,49 @@ a.video-container:hover .play-container {
     font-size: 45px;
 }
 
+.content-well p {
+    margin-bottom: 30px;
+}
+
 .content-well h5 {
     font-size: 30px;
     font-family: 'Libre Baskerville', serif;
     width: 100%;
-    border-bottom: 3px solid #3d3d3d;
-    margin: 20px 0 30px;
+    border-bottom: 1px solid #3d3d3d;
+    margin: 0;
+}
+
+.content-well blockquote {
+    margin: 0 0 30px 0;
+    font-style: italic;
+    font-weight: bold;
+    border-left: 0;
+    padding: 0 20px;
+}
+
+.content-well.primary-content img {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.content-well h5 + blockquote {
+    margin-top: 30px;
+}
+.content-well h5 + p {
+    margin-top: 30px;
+}
+
+.sharing {
+    margin: 0 0 30px 0px;
+}
+
+.row.more-block {
+    padding: 0;
+}
+.more-block h4 {
+    border-bottom: 1px solid #3d3d3d;
+    margin-bottom: 0;
+}
+.more-block > div {
+    margin-top: 0;
 }
