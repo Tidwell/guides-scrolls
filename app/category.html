@@ -18,7 +18,7 @@
 
         <!-- build:css styles/vendor.css -->
         <!-- bower:css -->
-        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="bower_components/RRSSB/css/rrssb.css">
         <!-- endbower -->
@@ -84,19 +84,11 @@
               </div>
             </div>
 
-            <!-- Type 1, full width -->
-            <a href="/guide.html" class="content-block">
-                <div class="jumbotron" style="background-image: url(images/growth.jpg)">
-                    <div class="type-tag tier3"><i class="fa fa-trophy"></i> Master</div>
-                    <div class="content-container">
-                        <h4>Combating the Meta</h4>
-                        <p>Blinky breaks down the current ladder metagame with a spotlight on mono-growth.</p>
-                    </div>
-                </div>
-            </a>
-
             <!-- type 2, three articles -->
-            <div class="row content-block">
+            <div class="row content-block more-block">
+                <div class="col-md-12">
+                    <h4>Recommended Guides</h4>
+                </div>
                 <div class="col-md-4 col-sm-6">
                     <a href="#">
                         <div class="content-item" style="background-image: url(images/screenshot.jpg)">
@@ -151,94 +143,6 @@
                 </div>
             </div>
 
-            <!--type 3, video + article -->
-            <div class="row content-block">
-                <div class="col-md-6 col-sm-12">
-                    <a href="#" class="video-container">
-                        <div class="content-item" style="background-image: url(images/growth.jpg)">
-                            <div class="player-placeholder" data-video-id="vh31f8hCfDY"></div>
-
-                            <div class="type-tag tier1"><i class="fa fa-video-camera"></i> Video</div>
-                            <div class="play-container">
-                                <i class="fa fa-play-circle"></i>
-                            </div>
-                            <div class="content-container">
-                                <h4>Precon Vs 'An Insult'</h4>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-md-6 col-sm-12">
-                    <a href="#">
-                        <div class="content-item"style="background-image: url(images/screenshot2.jpg)">
-                            <div class="type-tag tier3"><i class="fa fa-trophy"></i> Master</div>
-                            <div class="content-container">
-                                <h4>Card Advantage</h4>
-                                <p>There is only one thing you need to know about card advantage, and that is card advantage wins games.</p>
-                            </div>
-                        </div>
-                        <div class="bottom-info">
-                            <span class="author">BrTarolg</span>
-                            <span class="divider"> | </span>
-                            <span class="date">March 31st, 2014</span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Type 4, header with full width content section break -->
-            <!--TODO FIX TEXT ALIGNMENT-->
-            <div class="row content-block">
-                <h3>Hot Guides!</h3>
-                <div class="col-md-12">
-                    <a href="#">
-                        <div class="jumbotron content" style="background-image: url(images/judgment.png)">
-                            <div class="type-tag tier2"><i class="fa fa-star"></i> Intermediate</div>
-                            <div class="content-container">
-                                <h4>Judgment with Blinky!</h4>
-                                <p>Blinky shows you how to improve your drafting skills or at least gets you thinking a bit</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <!--repeat of type 3, just flipped, article + video-->
-            <div class="row content-block">
-                <div class="col-md-6 col-sm-12">
-                    <a href="#">
-                        <div class="content-item"style="background-image: url(images/screenshot2.jpg)">
-                            <div class="type-tag tier3"><i class="fa fa-trophy"></i> Master</div>
-                            <div class="content-container">
-                                <h4>Card Advantage</h4>
-                                <p>There is only one thing you need to know about card advantage, and that is card advantage wins games.</p>
-                            </div>
-                        </div>
-                        <div class="bottom-info">
-                            <span class="author">BrTarolg</span>
-                            <span class="divider"> | </span>
-                            <span class="date">March 31st, 2014</span>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-6 col-sm-12">
-                    <a href="#" class="video-container">
-                        <div class="content-item" style="background-image: url(images/judgment2.png)">
-                            <div class="player-placeholder" data-video-id="i3vM4eEP0mc"></div>
-
-                            <div class="type-tag tier1"><i class="fa fa-video-camera"></i> Video</div>
-                            <div class="play-container">
-                                <i class="fa fa-play-circle"></i>
-                            </div>
-                            <div class="content-container">
-                                <h4>Test Server Preview</h4>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
             <div class="footer">
                 <div class="row">
                     <hr />
@@ -251,8 +155,6 @@
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
         <script src="bower_components/jquery/dist/jquery.js"></script>
-        <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-        <script src="bower_components/RRSSB/js/rrssb.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
 
@@ -279,7 +181,7 @@
         <script src="bower_components/bootstrap/js/scrollspy.js"></script>
         <script src="bower_components/bootstrap/js/collapse.js"></script>
         <script src="bower_components/bootstrap/js/tab.js"></script>
-        <script src="bower_components/RRSSB/js/rrssb.min.js"></script>        
+        <script src="bower_components/RRSSB/js/rrssb.min.js"></script>
         <!-- endbuild -->
 
         <!-- build:js({app,.tmp}) scripts/main.js -->
