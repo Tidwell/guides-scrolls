@@ -9,7 +9,8 @@ h4 {
     font-family: 'Libre Baskerville', serif;
     letter-spacing: .1em;
     font-size: 2em;
-    font-weight: bold;
+    text-shadow: 2px 2px 3px #000;
+
 }
 h3 {
     color: #3d3d3d;
@@ -418,4 +419,7 @@ p > i.faction-growth {
 .category-hdr {
     margin: 30px 0;
     border-bottom: 1px solid #3d3d3d;
+}
+.category-hdr h4 {
+    text-shadow: none;
 }
