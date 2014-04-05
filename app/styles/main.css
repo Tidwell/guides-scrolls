@@ -414,3 +414,8 @@ p > i.faction-order {
 p > i.faction-growth {
     max-width: 13px;
 }
+
+.category-hdr {
+    margin: 30px 0;
+    border-bottom: 1px solid #3d3d3d;
+}
