@@ -213,6 +213,10 @@ a:hover .jumbotron .content-container {
     top: 50px;
 }
 
+.tag3 {
+    top: 80px;
+}
+
 .jumbotron .type-tag {
     box-shadow: -2px 2px 5px #000;
     padding-right: 10px;
