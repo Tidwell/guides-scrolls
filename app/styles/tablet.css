@@ -1,4 +1,39 @@
 @media (min-width: 768px) {
+	.navbar-default .navbar-brand {
+		font-size: 28px;
+		line-height: 28px;
+		padding: 8px 25px;
+	}
+	.navbar-default .navbar-collapse {
+		background: none;
+	}
+	.navbar-nav.navbar-right:last-child {
+		margin-right: 25px;
+	}
+
+	.navbar-nav>li>.dropdown-menu {
+		border: 3px solid #3d3d3d;
+	}
+	.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {
+		background-color: #3d3d3d;
+		color: #f7f7f7;
+	}
+	.navbar-default .navbar-nav>.active>a {
+		color: #fff;
+		background-color: transparent;
+	}
+
+	.navbar-default .navbar-nav>.active>a:hover {
+		background-color: transparent;
+		color: #fff;
+	}
+	.navbar-default .navbar-nav>li>a {
+	    border-right: 1px dashed #3d3d3d;
+	    font-weight: bold;
+	}
+	.navbar-default .navbar-nav>li>a:hover {
+	    color: #ccc;
+	}
 	.content-well h5 {
 		clear: both;
 	}

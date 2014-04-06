@@ -20,6 +20,17 @@ h3 {
     border-bottom: 2px solid #3d3d3d;
 }
 
+.navbar-default button.navbar-toggle,
+.navbar-default button.navbar-toggle:hover,
+.navbar-default button.navbar-toggle:active {
+    background: rgba(0,0,0,.5);
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+    color: #f6f6f6;
+    text-decoration: underline;
+}
+
 .row {
     margin: 0; /* so we dont get horizontal scrollbars */
 }
@@ -42,28 +53,25 @@ a:hover {
     border-bottom: 3px solid #3d3d3d;
     background-image: url('../images/header-bg.png');
     background-size: cover;
-    box-shadow: 0 2px 5px #000;
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
 }
 
 .navbar-default .navbar-brand {
     font-family: 'Playfair Display SC', serif;
     letter-spacing: .05em;
     color: #fdfdfd;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+.navbar-default .navbar-collapse {
+    background: #fff;
+    color: #3d3d3d;
+}
 .navbar-default .navbar-nav {
     font-size: 15px;
     border-top: 0;
-}
-
-.navbar-default .navbar-nav>li>a {
-    color: #fff;
-}
-.navbar-default .navbar-nav>li>a:hover {
-    color: #ccc;
 }
 
 .content-block {
@@ -136,9 +144,11 @@ a:hover .bottom-info {
 }
 
 /*jumbotron-specific content-container*/
-a:hover .jumbotron .content-container,
 .jumbotron .content-container {
     padding: 10px 25px; /* to line up the text with the first column */
+    background: none;
+}
+a:hover .jumbotron .content-container {
     background: none;
 }
 .jumbotron .content-container p {
@@ -149,6 +159,20 @@ a:hover .jumbotron .content-container,
 .jumbotron .content-container h4 {
     height: auto;
     text-shadow: 0 0 10px #000;
+}
+
+/*tout style jumbotron*/
+.jumbotron.content h4 {
+    margin: 0;
+}
+
+.jumbotron.content .content-container {
+    padding: 10px 10px;
+}
+
+.jumbotron.content .content-container p {
+    padding: 5px 0;
+    text-shadow: none;
 }
 
 
@@ -167,11 +191,20 @@ a:hover .jumbotron .content-container,
 .type-tag.tier1 {
     background: #30c333;
 }
+.navbar-default .navbar-nav>.tier1>a {
+    color: #30c333;
+}
 .type-tag.tier2 {
     background: #0B5FA5;
 }
+.navbar-default .navbar-nav>.tier2>a {
+    color: #0B5FA5;
+}
 .type-tag.tier3 {
     background: #502982;
+}
+.navbar-default .navbar-nav>.tier3>a {
+    color: #502982;
 }
 .content-item:hover .type-tag {
     box-shadow: -3px 3px 5px #000; /* add more dropdshadow when hovering over the content box */
